@@ -13,27 +13,25 @@ import SliderButtons from '@/components/SliderButtons';
 const projects = [
     {
         num: '01',
-        category: 'object-oriented programming',
         title: 'Chess',
-        description: 'Lorem ipsum dolor',
-        stack: [{ name: "C++" }, { name: "XWindow" } ],
+        description: 'Fully functional chess game built in C++. A two-player or single-player game against an AI of 4 different difficulties is playable through the command line',
+        stack: [{ name: "C++" }, { name: "Makefile" }, { name: "X11" }  ],
         image: '/assets/projects/thumb1.png',
         demo: "",
         github: "",
     },
     {
         num: '02',
-        category: 'game development',
         title: 'Tower of Hanoi',
-        description: 'Lorem ipsum dolor',
+        description: 'Interactive Tower of Hanoi game built using the Unity 3D game engine (incomplete for now!).',
         stack: [{ name: "C#" }, { name: "Unity 3D" } ],
         image: '/assets/projects/thumb2.png',
         demo: "",
         github: "",
     },
+    /*
     {
         num: '03',
-        category: 'frontend',
         title: 'Weather App',
         description: 'Lorem ipsum dolor',
         stack: [{ name: "React.js" }, { name: "Tailwind.css" } ],
@@ -41,6 +39,7 @@ const projects = [
         demo: "",
         github: "",
     },
+    */
 ]
 
 const Projects = () => {
@@ -65,9 +64,9 @@ const Projects = () => {
                             <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
                                 {project.num}
                             </div>
-                            {/* project category */}
+                            {/* project title */}
                             <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
-                                {project.category} project
+                                {project.title} project
                             </h2>
                             {/* description */}
                             <p className='text-white/60'>
